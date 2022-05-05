@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace LinkedList1
 {
-    internal class EmpLinkedList
+    internal class StudentLinkedList
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Program starts...");
             LinkedList<String> list = new LinkedList<String>();
-            Console.WriteLine("Adding Employee Details");
+            Console.WriteLine("Adding student Details");
             list.AddFirst("sudheeshna"); 
             list.AddLast("revathi");   
             list.AddLast("maneesha");  
@@ -27,8 +27,7 @@ namespace LinkedList1
             Console.WriteLine(list.Contains("sudheeshna"));  
             Console.WriteLine(list.Contains("maneesha"));
             Console.WriteLine("===============================================================");
-            //total number of employees in the list/Count of employees
-            Console.WriteLine("Total number of employees in the linked list is : {0} ", list.Count); 
+            Console.WriteLine("Total number of students in the linked list is : {0} ", list.Count); 
             Console.WriteLine("Program ends...");
         }
     }
