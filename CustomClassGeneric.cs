@@ -1,5 +1,4 @@
-﻿using System;
-//using System,Collections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +9,11 @@ namespace CustomGeneric
     public class CustomGeneric<String>  
     {
         public string Name { get; set; }    
-        static readonly int MAX2 = 500;  
+        int MAX2 = 500;  
         int top2;                        
         String[] str = new String[MAX2]; 
-        
-
        
-
-        public void Push(String data)  
+       public void Push(String data)  
         {
             if(top2 > MAX2)
             {
@@ -26,7 +22,7 @@ namespace CustomGeneric
             else
             {
                 str[top2++]=data;
-                Console.WriteLine("Persons who contest UNGA elections next week are added to Stack : " + data);
+                Console.WriteLine("people who applied for job those are going to added in stack : " + data);
             }
         }
         public void Pop()  
@@ -39,7 +35,7 @@ namespace CustomGeneric
             {
                 String value = str[top2--];
                 Console.WriteLine(value);
-                Console.WriteLine("Persons who withdrawn from UNGA Elections are Popped from the stack are : " + value);
+                Console.WriteLine("who are withdraw their application for the applied job  " + value);
             }
         }
     }
