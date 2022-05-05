@@ -26,10 +26,10 @@ namespace BinarySerializer
             BinaryFormatter formatter = new BinaryFormatter();
             formatter.Serialize(fileStream, manager); 
             Console.ReadKey();
-            Manager managerAskingToDesialize = (Manager) formatter.Deserialize(fileStream);
-            Console.WriteLine(managerAskingToDesialize.managerId);
-            Console.WriteLine(managerAskingToDesialize.managerName);
-            Console.WriteLine(managerAskingToDesialize.managerBasicSalary);
+            Manager managerAskingToDeserialize = (Manager) formatter.Deserialize(fileStream);
+            Console.WriteLine(managerAskingToDeserialize.managerId);
+            Console.WriteLine(managerAskingToDeserialize.managerName);
+            Console.WriteLine(managerAskingToDeserialize.managerBasicSalary);
             Console.ReadKey();
 
         }
