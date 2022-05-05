@@ -13,9 +13,9 @@ namespace MyStackConsoleApplication
 
         }
     }
-    internal class CustomStackException
+    class CustomStackException
     {
-        static readonly int MAX1 = 1000;
+         int MAX1 = 1000;
         int top1;
         int[] arr1 = new int[MAX1];
 
@@ -81,7 +81,7 @@ namespace MyStackConsoleApplication
         }
         static void Main()
         {
-            CustomStackException cl2 = new CustomStackException();
+            CustomStackException cse = new CustomStackException();
             Console.WriteLine("Program starts...");
             Console.WriteLine("Please Enter Valid Credentials to get into the Application : ");
             Console.ReadLine();
@@ -90,15 +90,15 @@ namespace MyStackConsoleApplication
             //Console.ReadLine();
             Console.WriteLine("Evrything is perfect! plase go ahead with pressing ENTER");
             Console.ReadLine();
-            cl2.IsEmpty();
+            cse.IsEmpty();
             Console.WriteLine("Thanks for your patience! here is the Top Most element");
-            cl2.Peek();
-            cl2.PrintStack();
+            cse.Peek();
+            cse.PrintStack();
             
             try
             {
-                cl2.Push(100);
-                cl2.Push(200);
+                cse.Push(100);
+                cse.Push(200);
             }
             catch(StackException stackException)
             {
@@ -106,7 +106,7 @@ namespace MyStackConsoleApplication
             }
             try
             {
-                cl2.Pop();
+                cse.Pop();
             }
             catch(StackException stackException1)
             {
