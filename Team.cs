@@ -14,7 +14,7 @@ namespace TeamPlayerClasses
         public String Name { get; set; }
         public String surName { get; set; }
 
-        public Team()  //Zero argument constructor
+        public Team()  //parameterless constructor
         {
             members = new Team[11];
         }
